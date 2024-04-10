@@ -5,7 +5,7 @@ interface NavButtonProps {
     url: string
 }
 
-export default function NavButton({ text, url}: NavButtonProps) {
+export default function NavButton({ text, url }: NavButtonProps) {
     return (
         <li className="shrink mx-4">
             <Link className="hover:text-accent" href={url}>

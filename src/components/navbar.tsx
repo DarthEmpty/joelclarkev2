@@ -6,11 +6,12 @@ export default function NavBar() {
             <h1 className="text-4xl font-bold uppercase">Joel Clarke</h1>
 
             <div className="grow"/>
-            
+
             <ul className="flex">
                 <NavButton text="Home" url="#"/>
-                <NavButton text="Gallery" url="#"/>
                 <NavButton text="CV" url="#"/>
+                <NavButton text="Projects" url="#"/>
+                <NavButton text="Gallery" url="#"/>
             </ul>
         </nav>
     );
