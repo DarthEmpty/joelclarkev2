@@ -1,13 +1,17 @@
-import NavButton from "./navbutton"
+import NavButton from "@/components/navbutton"
 
 export default function NavBar() {
     return (
-        <nav>
-            <div className="flex-grow"/>
+        <nav className="flex fixed items-center p-7 w-full bg-primary-light dark:bg-primary-dark">
+            <h1 className="text-4xl font-bold uppercase">Joel Clarke</h1>
 
-            <NavButton text="Home" url="#"/>
-            <NavButton text="Gallery" url="#"/>
-            <NavButton text="CV" url="#"/>
+            <div className="grow"/>
+            
+            <ul className="flex">
+                <NavButton text="Home" url="#"/>
+                <NavButton text="Gallery" url="#"/>
+                <NavButton text="CV" url="#"/>
+            </ul>
         </nav>
     );
 }
