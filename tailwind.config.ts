@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import defaultColors from "tailwindcss/colors"
 
 const config: Config = {
   content: [
@@ -8,9 +9,10 @@ const config: Config = {
   ],
   theme: {
     colors: {
+      ...defaultColors,
       "primary-dark": "#1F2E47",
       "primary-light": "#D3CFDE",
-      "accent": "#E5446D"
+      "accent": "#E5446D",
     }
   },
   plugins: [],

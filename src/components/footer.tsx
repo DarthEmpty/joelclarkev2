@@ -10,7 +10,9 @@ export default function Footer() {
         <NavButton text="LinkedIn" url="https://www.linkedin.com/in/joel-clarke-7baa16128/"/>
       </ul>
 
-      <p className="text-sm">Made with <strong className="text-accent">NextJS</strong>, using <strong className="text-accent">TypeScript</strong> and <strong className="text-accent">TailwindCSS</strong></p>
+      <p className="text-sm text-center">
+        Made with <strong className="text-accent">NextJS</strong>, using <strong className="text-accent">TypeScript</strong> and <strong className="text-accent">TailwindCSS</strong>
+      </p>
     </footer>
   )
 }
