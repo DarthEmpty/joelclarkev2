@@ -6,12 +6,12 @@ import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: "Joel Clarke",
   description: "Welcome to my corner of the internet",
 };
 
-export default function RootLayout({
+function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -26,3 +26,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+export { RootLayout as default, metadata };
