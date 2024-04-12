@@ -6,7 +6,7 @@ const Hamburger = () => (
     viewBox="0 0 24 24"
     strokeWidth={1.5}
     stroke="currentColor"
-    className={"w-9 h-9"}
+    className="h-9 w-9"
   >
     <path
       strokeLinecap="round"
@@ -24,7 +24,7 @@ const LeftArrow = () => (
     viewBox="0 0 24 24"
     strokeWidth={1.5}
     stroke="currentColor"
-    className="w-6 h-6"
+    className="h-9 w-9"
   >
     <path
       strokeLinecap="round"

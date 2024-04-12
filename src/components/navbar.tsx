@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const NavBarButtonGroup = (props: { className: string }) => (
   <ul className={props.className}>
-    <NavButton text="Home" url="#" />
+    <NavButton text="Home" url="/" />
     <NavButton text="CV" url="#" />
     <NavButton text="Projects" url="#" />
     <NavButton text="Gallery" url="#" />
@@ -14,13 +14,13 @@ const NavBarButtonGroup = (props: { className: string }) => (
 );
 
 function NavBar() {
-  const [showNav, setShowNav] = useState(false);
+  const [showNavDrawer, setShowNavDrawer] = useState(false);
 
   return (
-    <nav className="flex fixed items-center p-7 w-full bg-primary-light dark:bg-primary-dark">
+    <nav className="fixed flex w-full items-center bg-primary-light p-7 dark:bg-primary-dark">
       <button
-        onClick={() => setShowNav(true)}
-        className="bg-accent rounded-full p-2 mr-5 md:collapse"
+        onClick={() => setShowNavDrawer(true)}
+        className="mr-5 rounded-full bg-accent p-2 md:collapse"
       >
         <Hamburger />
       </button>
@@ -29,14 +29,14 @@ function NavBar() {
 
       <div className="grow" />
 
-      <NavBarButtonGroup className="flex text-lg invisible md:visible" />
+      <NavBarButtonGroup className="invisible flex text-lg md:visible" />
 
-      {showNav && (
-        <div className="absolute left-0 top-0 h-screen bg-white dark:bg-black items-center md:invisible">
-          <NavBarButtonGroup className="text-4xl m-10 space-y-5" />
+      {showNavDrawer && (
+        <div className="absolute left-0 top-0 flex h-screen w-2/3 flex-col items-center bg-white md:invisible dark:bg-black">
+          <NavBarButtonGroup className="m-10 space-y-5 text-4xl" />
           <button
-            onClick={() => setShowNav(false)}
-            className="bg-accent rounded-full p-2 mr-5 md:collapse"
+            onClick={() => setShowNavDrawer(false)}
+            className="mt-5 rounded-full bg-accent p-2 md:collapse"
           >
             <LeftArrow />
           </button>
