@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { MouseEventHandler } from "react";
+import { Link as LinkIcon } from "@/components/icons"
 
 interface NavButtonProps {
   text: string;
@@ -19,11 +20,12 @@ const NavButton = (props: NavButtonProps) => (
       </Link>
     ) : (
       <a
-        className="hover:text-accent"
+        className="hover:text-accent flex"
         href={props.url}
         onClick={props.onClick}
         target="_blank"
       >
+        <LinkIcon />
         {props.text}
       </a>
     )}

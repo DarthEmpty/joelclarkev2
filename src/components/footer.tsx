@@ -1,4 +1,5 @@
 import NavButton from "@/components/navbutton";
+import { Strong } from "@/components/typography"
 
 const Footer = () => (
   <footer className="flex w-full flex-col items-center space-y-5 p-12">
@@ -12,9 +13,9 @@ const Footer = () => (
     </ul>
 
     <p className="text-center text-sm">
-      Made with <strong className="text-accent-dark">NextJS</strong>, using{" "}
-      <strong className="text-accent-dark">TypeScript</strong> and{" "}
-      <strong className="text-accent-dark">TailwindCSS</strong>
+      Made with <Strong>NextJS</Strong>, using{" "}
+      <Strong>TypeScript</Strong> and{" "}
+      <Strong>TailwindCSS</Strong>
     </p>
   </footer>
 );

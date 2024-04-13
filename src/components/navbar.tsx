@@ -44,7 +44,7 @@ function NavBar() {
           />
 
           <button
-            className="mt-5 rounded-full bg-accent p-2 md:collapse"
+            className="mt-5 rounded-full bg-accent-light dark:bg-accent-dark p-2 md:collapse"
             onClick={() => setShowNavDrawer(false)}
           >
             <LeftArrow />
