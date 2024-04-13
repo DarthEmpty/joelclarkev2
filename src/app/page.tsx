@@ -19,8 +19,8 @@ const Home = () => (
     <HomeSection heading="Welcome!">
       <p>
         Hey there! My name is <Strong>Joel</Strong> - a creative and diligent
-        software developer who's motivated to learn, help people, and make a
-        difference.
+        software developer who&apos;s motivated to learn, help people, and make
+        a difference.
       </p>
     </HomeSection>
 
@@ -56,7 +56,7 @@ const Home = () => (
 
     <HomeSection heading="Writer">
       <p>
-        I'm in the very early stages of creating a graphic novel called{" "}
+        I&apos;m in the very early stages of creating a graphic novel called{" "}
         <Strong>Martyr</Strong>, a low fantasy story about a girl, her purpose,
         and the growing tensions on her island.
       </p>
@@ -66,8 +66,8 @@ const Home = () => (
       </p>
       <p>
         Right now, the story is kept secret and safe from all (safe a few
-        reviewers) but I'm looking to share snippets of it in due time so watch
-        this space!
+        reviewers) but I&apos;m looking to share snippets of it in due time so
+        watch this space!
       </p>
     </HomeSection>
 
@@ -78,15 +78,15 @@ const Home = () => (
       </p>
 
       <p>
-        While I no longer help lead the church, I'm still involved in its{" "}
+        While I no longer help lead the church, I&apos;m still involved in its{" "}
         <Strong>music</Strong> and <Strong>teaching</Strong> on a regular basis.
       </p>
 
       <p>
-        I'm excited by the world of Improv! I thoroughly enjoyed taking a level
-        1 course with <Strong>Hoopla!</Strong> and love shows like{" "}
+        I&apos;m excited by the world of Improv! I thoroughly enjoyed taking a
+        level 1 course with <Strong>Hoopla!</Strong> and love shows like{" "}
         <Strong>Act Promptly</Strong>, <Strong>Off Book</Strong>, and -
-        naturally - <Strong>Who's Line Is It Anyway?</Strong>
+        naturally - <Strong>Who&apos;s Line Is It Anyway?</Strong>
       </p>
 
       <p>
