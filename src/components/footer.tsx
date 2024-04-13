@@ -12,9 +12,9 @@ const Footer = () => (
     </ul>
 
     <p className="text-center text-sm">
-      Made with <strong className="text-accent">NextJS</strong>, using{" "}
-      <strong className="text-accent">TypeScript</strong> and{" "}
-      <strong className="text-accent">TailwindCSS</strong>
+      Made with <strong className="text-accent-dark">NextJS</strong>, using{" "}
+      <strong className="text-accent-dark">TypeScript</strong> and{" "}
+      <strong className="text-accent-dark">TailwindCSS</strong>
     </p>
   </footer>
 );

@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import defaultColors from "tailwindcss/colors"
+import defaultColors from "tailwindcss/colors";
 
 const config: Config = {
   content: [
@@ -9,10 +9,14 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      ...defaultColors,
-      "primary-dark": "#1F2E47",
-      "primary-light": "#D3CFDE",
-      "accent": "#E5446D",
+      "primary-dark": defaultColors.blue[950],
+      "secondary-dark": defaultColors.blue[900],
+      "primary-light": defaultColors.blue[100],
+      "secondary-light": defaultColors.blue[200],
+      "accent-light": defaultColors.rose[400],
+      "accent-dark": defaultColors.rose[500],
+      "black": defaultColors.black,
+      "white": defaultColors.white,
     }
   },
   plugins: [],

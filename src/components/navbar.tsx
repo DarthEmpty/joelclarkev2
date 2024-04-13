@@ -22,9 +22,9 @@ function NavBar() {
   const [showNavDrawer, setShowNavDrawer] = useState(false);
 
   return (
-    <nav className="fixed flex w-full items-center bg-primary-light p-7 dark:bg-primary-dark">
+    <nav className="sticky top-0 flex w-full items-center bg-primary-light p-7 dark:bg-primary-dark">
       <button
-        className="mr-5 rounded-full bg-accent p-2 md:collapse"
+        className="mr-5 rounded-full bg-accent-light dark:bg-accent-dark p-2 md:collapse"
         onClick={() => setShowNavDrawer(true)}
       >
         <Hamburger />
@@ -32,9 +32,9 @@ function NavBar() {
 
       <h1 className="text-4xl font-bold uppercase">Joel Clarke</h1>
 
-      <div className="grow" />
+      <div className="shrink md:grow" />
 
-      <NavBarButtonGroup className="invisible flex text-lg md:visible" />
+      <NavBarButtonGroup className="invisible shrink md:visible md:flex md:text-lg" />
 
       {showNavDrawer && (
         <div className="absolute left-0 top-0 flex h-screen w-2/3 flex-col items-center bg-white md:invisible dark:bg-black">
