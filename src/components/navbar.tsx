@@ -2,14 +2,19 @@
 
 import { Hamburger, LeftArrow } from "@/components/icons";
 import NavButton from "@/components/navbutton";
-import { useState } from "react";
+import { MouseEventHandler, useState } from "react";
 
-const NavBarButtonGroup = (props: { className: string }) => (
+interface NavBarButtonGroupProps {
+  className?: string;
+  onClick?: MouseEventHandler;
+}
+
+const NavBarButtonGroup = (props: NavBarButtonGroupProps) => (
   <ul className={props.className}>
-    <NavButton text="Home" url="/" />
-    <NavButton text="CV" url="#" />
-    <NavButton text="Projects" url="#" />
-    <NavButton text="Gallery" url="#" />
+    <NavButton text="Home" url="/" onClick={props.onClick} />
+    <NavButton text="CV" url="/#" onClick={props.onClick} />
+    <NavButton text="Projects" url="/#" onClick={props.onClick} />
+    <NavButton text="Gallery" url="/#" onClick={props.onClick} />
   </ul>
 );
 
@@ -19,8 +24,8 @@ function NavBar() {
   return (
     <nav className="fixed flex w-full items-center bg-primary-light p-7 dark:bg-primary-dark">
       <button
-        onClick={() => setShowNavDrawer(true)}
         className="mr-5 rounded-full bg-accent p-2 md:collapse"
+        onClick={() => setShowNavDrawer(true)}
       >
         <Hamburger />
       </button>
@@ -33,10 +38,14 @@ function NavBar() {
 
       {showNavDrawer && (
         <div className="absolute left-0 top-0 flex h-screen w-2/3 flex-col items-center bg-white md:invisible dark:bg-black">
-          <NavBarButtonGroup className="m-10 space-y-5 text-4xl" />
-          <button
+          <NavBarButtonGroup
+            className="m-10 space-y-5 text-4xl"
             onClick={() => setShowNavDrawer(false)}
+          />
+
+          <button
             className="mt-5 rounded-full bg-accent p-2 md:collapse"
+            onClick={() => setShowNavDrawer(false)}
           >
             <LeftArrow />
           </button>
