@@ -24,7 +24,7 @@ function NavBar() {
   return (
     <nav className="sticky top-0 flex w-full items-center bg-primary-light p-7 dark:bg-primary-dark">
       <button
-        className="mr-5 rounded-full bg-accent-light dark:bg-accent-dark p-2 md:collapse"
+        className="mr-5 rounded-full bg-accent-light p-2 md:collapse dark:bg-accent-dark"
         onClick={() => setShowNavDrawer(true)}
       >
         <Hamburger />
@@ -44,7 +44,7 @@ function NavBar() {
           />
 
           <button
-            className="mt-5 rounded-full bg-accent-light dark:bg-accent-dark p-2 md:collapse"
+            className="mt-5 rounded-full bg-accent-light p-2 md:collapse dark:bg-accent-dark"
             onClick={() => setShowNavDrawer(false)}
           >
             <LeftArrow />

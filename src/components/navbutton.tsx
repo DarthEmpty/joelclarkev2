@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { MouseEventHandler } from "react";
-import { Link as LinkIcon } from "@/components/icons"
+import { Link as LinkIcon } from "@/components/icons";
 
 interface NavButtonProps {
   text: string;
