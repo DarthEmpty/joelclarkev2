@@ -30,7 +30,9 @@ function NavBar() {
         <Hamburger />
       </button>
 
-      <h1 className="text-4xl font-bold uppercase">Joel Clarke</h1>
+      <h1 className="text-4xl font-bold uppercase tracking-wide">
+        Joel Clarke
+      </h1>
 
       <div className="shrink md:grow" />
 

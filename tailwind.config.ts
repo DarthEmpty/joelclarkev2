@@ -12,12 +12,12 @@ const config: Config = {
       "primary-dark": defaultColors.blue[950],
       "secondary-dark": defaultColors.blue[900],
       "primary-light": defaultColors.blue[100],
-      "secondary-light": defaultColors.blue[200],
+      "secondary-light": defaultColors.white,
       "accent-light": defaultColors.rose[400],
       "accent-dark": defaultColors.rose[500],
-      "black": defaultColors.black,
-      "white": defaultColors.white,
-    }
+      black: defaultColors.black,
+      white: defaultColors.white,
+    },
   },
   plugins: [],
 };

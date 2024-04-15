@@ -12,7 +12,7 @@ const NavButton = (props: NavButtonProps) => (
   <li className="px-4">
     {props.url.startsWith("/") ? (
       <Link
-        className="hover:text-accent"
+        className="hover:text-accent-dark dark:hover:text-accent-light"
         href={props.url}
         onClick={props.onClick}
       >
@@ -20,7 +20,7 @@ const NavButton = (props: NavButtonProps) => (
       </Link>
     ) : (
       <a
-        className="hover:text-accent flex"
+        className="hover:text-accent-dark dark:hover:text-accent-light flex"
         href={props.url}
         onClick={props.onClick}
         target="_blank"
