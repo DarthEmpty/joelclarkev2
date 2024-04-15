@@ -16,6 +16,23 @@ const HomeSection = (props: HomeSectionProps) => (
   </div>
 );
 
+interface SectionButtonProps {
+  text: string;
+  url: string;
+  disabled?: boolean;
+}
+
+const SectionButton = (props: SectionButtonProps) => (
+  <a href={props.url} target="_blank">
+    <button
+      disabled={props.disabled}
+      className="hover:ring-4 hover:ring-accent-dark dark:hover:ring-white disabled:ring-0 rounded-lg bg-accent-light dark:bg-accent-dark disabled:bg-accent-light/50 dark:disabled:bg-accent-dark/50 p-4 mt-10"
+    >
+      {props.text}
+    </button>
+  </a>
+);
+
 const Home = () => (
   <main>
     <HomeSection heading="Welcome!">
@@ -36,6 +53,10 @@ const Home = () => (
         My skillset includes <Strong>Python 3</Strong>, <Strong>VueJS</Strong>,
         and <Strong>NextJS</Strong> (which I used to create this website!).
       </p>
+      <SectionButton
+        text="Check out my Github!"
+        url="https://github.com/DarthEmpty"
+      />
     </HomeSection>
 
     <HomeSection heading="Technician">
@@ -44,6 +65,7 @@ const Home = () => (
         the NHS - a very fast paced environment where efficiency, accuracy, and
         communication really matter.
       </p>
+      <SectionButton text="Find out more on the CV!" url="/CV.pdf" />
     </HomeSection>
 
     <HomeSection heading="Artist">
@@ -54,6 +76,7 @@ const Home = () => (
         digital art programs - like <Strong>Affinity Designer</Strong> and{" "}
         <Strong>Clip Studio Paint</Strong>.
       </p>
+      <SectionButton text="Gallery coming soon..." url="/" disabled={true} />
     </HomeSection>
 
     <HomeSection heading="Writer">
