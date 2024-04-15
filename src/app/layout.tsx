@@ -18,7 +18,9 @@ function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={`${inter.className} bg-secondary-light dark:bg-secondary-dark`}
+      >
         <NavBar />
         {children}
         <Footer />
