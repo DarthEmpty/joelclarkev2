@@ -6,16 +6,18 @@ interface HomeSectionProps {
 }
 
 const HomeSection = (props: HomeSectionProps) => (
-  <section className="min-w-full space-y-4 p-12 odd:bg-primary-light even:bg-secondary-light md:flex md:flex-col md:p-24 dark:odd:bg-primary-dark dark:even:bg-secondary-dark">
-    <h1 className="text-4xl font-semibold capitalize text-accent-dark">
-      {props.heading}
-    </h1>
-    {props.children}
-  </section>
+  <div className="min-w-full odd:bg-secondary-light even:bg-primary-light dark:odd:bg-secondary-dark dark:even:bg-primary-dark">
+    <section className="md:text-xl md:container md:mx-auto space-y-5 md:space-y-8 p-12 xl:px-96 md:py-24">
+      <h1 className="text-4xl md:text-6xl font-semibold capitalize text-accent-dark">
+        {props.heading}
+      </h1>
+      {props.children}
+    </section>
+  </div>
 );
 
 const Home = () => (
-  <main className="bg-primary-light dark:bg-primary-dark">
+  <main>
     <HomeSection heading="Welcome!">
       <p>
         Hey there! My name is <Strong>Joel</Strong> - a creative and diligent
