@@ -1,5 +1,5 @@
 // From heroicons v2.1.1
-const Hamburger = () => (
+export const Hamburger = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -17,7 +17,7 @@ const Hamburger = () => (
 );
 
 // From heroicons v2.1.1
-const LeftArrow = () => (
+export const LeftArrow = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -34,7 +34,7 @@ const LeftArrow = () => (
   </svg>
 );
 
-const Link = () => (
+export const Link = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -50,5 +50,3 @@ const Link = () => (
     />
   </svg>
 );
-
-export { Hamburger, LeftArrow, Link };
