@@ -98,8 +98,8 @@ const Home = () => (
 
     <HomeSection heading="And then some...">
       <p>
-        I helped lead <Strong>The Journey Church</Strong> near Egham for 5 and
-        1/2 years, including through the height of the Covid pandemic.
+        I helped lead <Strong>The Journey Church</Strong> near Egham for 5½
+        years, including through the height of the Covid pandemic.
       </p>
 
       <p>
