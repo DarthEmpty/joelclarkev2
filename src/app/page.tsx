@@ -35,15 +35,15 @@ const SectionButton = (props: SectionButtonProps) => (
 
 const Home = () => (
   <main>
-    <HomeSection heading="Welcome!">
+    <HomeSection heading="Hey There!">
       <p>
-        Hey there! My name is <Strong>Joel</Strong> - a creative and diligent
+        I&apos;m <Strong>Joel</Strong> - a creative and diligent
         software developer who&apos;s motivated to learn, help people, and make
         a difference.
       </p>
     </HomeSection>
 
-    <HomeSection heading="Programmer">
+    <HomeSection heading="Software Developer">
       <p>
         I studied <Strong>Computer Science</Strong> at Royal Holloway University
         and am still very eager to break into the{" "}
@@ -59,13 +59,13 @@ const Home = () => (
       />
     </HomeSection>
 
-    <HomeSection heading="Technician">
+    <HomeSection heading="IT Technician">
       <p>
         I currently work as an <Strong>IT Service Desk Technician</Strong> in
         the NHS - a very fast paced environment where efficiency, accuracy, and
         communication really matter.
       </p>
-      <SectionButton text="Find out more on the CV!" url="/CV.pdf" />
+      <SectionButton text="Find out more on the CV!" url="/SoftEngCV.pdf" />
     </HomeSection>
 
     <HomeSection heading="Artist">
