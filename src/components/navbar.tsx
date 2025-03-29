@@ -12,7 +12,7 @@ interface NavBarButtonGroupProps {
 const NavBarButtonGroup = (props: NavBarButtonGroupProps) => (
   <ul className={props.className}>
     <NavButton text="Home" url="/" onClick={props.onClick} />
-    <NavButton text="CV" url="/CV.pdf" onClick={props.onClick} />
+    <NavButton text="CV" url="/SoftEngCV.pdf" onClick={props.onClick} />
     {/* COMING SOON! */}
     {/* <NavButton text="Projects" url="/#" onClick={props.onClick} />
     <NavButton text="Gallery" url="/#" onClick={props.onClick} /> */}
