@@ -18,6 +18,14 @@ const config: Config = {
       black: defaultColors.black,
       white: defaultColors.white,
     },
+    extend: {
+      keyframes: {
+        typing: {
+          "0%, 90%": { width: "0" },
+          "30%, 60%": { width: "100%" },
+        },
+      },
+    },
   },
   plugins: [],
 };
