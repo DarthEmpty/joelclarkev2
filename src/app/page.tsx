@@ -23,7 +23,9 @@ const Home = () => (
       />
 
       <div className="mx-auto max-w-64">
-        <Typewriter text="Software Engineer" />
+        <Typewriter
+          texts={["Software Engineer", "Artist", "Writer", "Actor"]}
+        />
       </div>
     </HomeSection>
   </main>

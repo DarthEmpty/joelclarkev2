@@ -1,15 +1,22 @@
+"use client";
+
+import { useState } from "react";
+
 interface TypewriterProps {
-  text: string;
+  texts: string[];
 }
 
 function Typewriter(props: TypewriterProps) {
+  const [index, setIndex] = useState(0);
+
   return (
     <h1
       className={
-        "w-0 whitespace-nowrap overflow-hidden animate-[typing_8s_linear_1s_infinite]"
+        "w-0 whitespace-nowrap overflow-hidden animate-[typing_6s_linear_1s_infinite]"
       }
+      onAnimationIteration={() => setIndex((index + 1) % props.texts.length)}
     >
-      {props.text}
+      {props.texts[index]}
     </h1>
   );
 }
