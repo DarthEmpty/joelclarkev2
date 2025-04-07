@@ -1,7 +1,7 @@
 import Typewriter from "@/components/typewriter";
 import Image from "next/image";
 
-const faceImage = "/images/face.jpg";
+const FACE_IMAGE_PATH = "/images/face.jpg";
 
 interface HomeSectionProps {
   children: React.ReactNode;
@@ -15,16 +15,25 @@ const Home = () => (
   <main>
     <HomeSection>
       <Image
-        src={faceImage}
+        src={FACE_IMAGE_PATH}
         alt="Me!"
         width={100}
         height={100}
         className="object-cover mx-auto my-10 size-64 rounded-3xl"
       />
 
-      <div className="mx-auto max-w-64">
+      <div className="mx-auto w-64">
         <Typewriter
-          texts={["Software Engineer", "Artist", "Writer", "Actor"]}
+          texts={[
+            "Software Engineer",
+            "IT Technician",
+            "Writer",
+            "Artist",
+            "Actor",
+            "Improv Comedian",
+            "Runner",
+            "Musician",
+          ]}
         />
       </div>
     </HomeSection>
