@@ -3,26 +3,19 @@ import Image from "next/image";
 
 const FACE_IMAGE_PATH = "/images/face.jpg";
 
-interface HomeSectionProps {
-  children: React.ReactNode;
-}
-
-const HomeSection = (props: HomeSectionProps) => (
-  <section className="container h-screen">{props.children}</section>
-);
-
 const Home = () => (
-  <main>
-    <HomeSection>
+  <main className="flex flex-col mx-auto h-screen">
+    <div className="md:grow" />
+    <div className="md:shrink md:flex md:mx-auto md:content-center md:gap-x-10 md:justify-center">
       <Image
         src={FACE_IMAGE_PATH}
         alt="Me!"
         width={100}
         height={100}
-        className="object-cover mx-auto my-10 size-64 rounded-3xl"
+        className="object-cover size-64 rounded-3xl mx-auto my-7 md:mx-0 md:my-0"
       />
 
-      <div className="mx-auto w-64">
+      <div className="max-w-64 mx-auto md:max-w-full md:mx-0">
         <Typewriter
           texts={[
             "Software Engineer",
@@ -34,9 +27,14 @@ const Home = () => (
             "Runner",
             "Musician",
           ]}
+          className="text-2xl font-semibold text-accent-light md:text-4xl"
         />
+        <p className="md:text-lg">
+          Hello - I&apos;m Joel! Welcome to my corner of the internet.
+        </p>
       </div>
-    </HomeSection>
+    </div>
+    <div className="md:grow" />
   </main>
 );
 
