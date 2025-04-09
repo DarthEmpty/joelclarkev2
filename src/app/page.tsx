@@ -15,7 +15,7 @@ const Home = () => (
         className="object-cover size-64 rounded-3xl mx-auto my-7 md:mx-0 md:my-0"
       />
 
-      <div className="max-w-64 mx-auto md:max-w-full md:mx-0">
+      <div className="w-64 mx-auto md:w-full md:mx-0">
         <Typewriter
           texts={[
             "Software Engineer",
@@ -27,11 +27,10 @@ const Home = () => (
             "Runner",
             "Musician",
           ]}
-          className="text-2xl font-semibold text-accent-light md:text-4xl"
+          className="text-xl font-semibold text-accent-light md:text-3xl"
         />
-        <p className="md:text-lg">
-          Hello - I&apos;m Joel! Welcome to my corner of the internet.
-        </p>
+        <p className="md:text-lg">Hello - I&apos;m Joel!</p>
+        <p className="md:text-lg">Welcome to my corner of the internet.</p>
       </div>
     </div>
     <div className="md:grow" />

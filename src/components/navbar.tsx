@@ -23,7 +23,7 @@ function NavBar() {
   const [showNavDrawer, setShowNavDrawer] = useState(false);
 
   return (
-    <nav className="sticky top-0 flex w-full items-center bg-primary-light p-7 dark:bg-primary-dark">
+    <nav className="sticky top-0 flex w-full items-center bg-primary-light p-7 dark:bg-primary-dark md:fixed">
       <button
         className="mr-5 rounded-full bg-accent-light p-2 md:collapse dark:bg-accent-dark"
         onClick={() => setShowNavDrawer(true)}
