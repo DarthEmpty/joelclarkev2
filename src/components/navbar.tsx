@@ -1,5 +1,5 @@
 const NavBar = () => (
-  <nav className="sticky top-0 flex w-full items-center bg-primary-light p-7 dark:bg-primary-dark md:fixed">
+  <nav className="fixed flex top-0 w-full h-20 items-center p-7 bg-secondary">
     <h1 className="text-4xl font-bold uppercase tracking-wide">Joel Clarke</h1>
   </nav>
 );

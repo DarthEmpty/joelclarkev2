@@ -9,10 +9,8 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      "primary-dark": defaultColors.blue[950],
-      "secondary-dark": defaultColors.blue[900],
-      "primary-light": defaultColors.blue[100],
-      "secondary-light": defaultColors.white,
+      primary: defaultColors.blue[900],
+      secondary: defaultColors.blue[950],
       "accent-light": defaultColors.rose[400],
       "accent-dark": defaultColors.rose[500],
       black: defaultColors.black,

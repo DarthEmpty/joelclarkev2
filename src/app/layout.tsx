@@ -38,9 +38,7 @@ function RootLayout({
         />
         <link rel="manifest" href="/favicon/site.webmanifest" />
       </head>
-      <body
-        className={`${inter.className} bg-secondary-light dark:bg-secondary-dark`}
-      >
+      <body className={`${inter.className} bg-primary`}>
         <NavBar />
         {children}
       </body>

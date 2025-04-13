@@ -38,7 +38,7 @@ const HomeLink = (props: HomeLinkProps) => (
 
 const Home = () => (
   <main className="flex flex-col mx-auto h-screen">
-    <div className="md:grow" />
+    <div className="grow" />
     <div className="md:shrink md:flex md:mx-auto md:content-center md:gap-x-10 md:justify-center">
       <Image
         src={FACE_IMAGE_PATH}
@@ -61,7 +61,7 @@ const Home = () => (
         >
           Check out my CV!
         </Link>
-        <div className="md:grow" />
+        <div className="grow" />
         <div className="flex mt-10 justify-around md:mt-0 md:justify-normal">
           <HomeLink icon={faEnvelope} url="mailto:joel@joelclarke.co.uk" />
           <HomeLink icon={faGithub} url="https://github.com/DarthEmpty" />
@@ -72,7 +72,7 @@ const Home = () => (
         </div>
       </div>
     </div>
-    <div className="md:grow" />
+    <div className="grow" />
   </main>
 );
 
