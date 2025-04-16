@@ -37,7 +37,7 @@ const HomeLink = (props: HomeLinkProps) => (
 );
 
 const Home = () => (
-  <main className="flex flex-col mx-auto h-screen">
+  <main className="flex flex-col mx-auto min-h-screen">
     <div className="grow" />
     <div className="md:shrink md:flex md:mx-auto md:content-center md:gap-x-10 md:justify-center">
       <Image
