@@ -28,17 +28,17 @@ interface HomeLinkProps {
 }
 
 const HomeLink = (props: HomeLinkProps) => (
-  <Link href={props.url} target="_blank">
+  <a href={props.url} target="_blank">
     <FontAwesomeIcon
       className="w-7 mr-5 text-accent-dark active:text-accent-light md:opacity-50 md:hover:opacity-100"
       icon={props.icon}
     />
-  </Link>
+  </a>
 );
 
 const Home = () => (
   <main className="flex flex-col mx-auto min-h-screen">
-    <div className="grow" />
+    <div className="grow min-h-20" />
     <div className="md:shrink md:flex md:mx-auto md:content-center md:gap-x-10 md:justify-center">
       <Image
         src={FACE_IMAGE_PATH}
@@ -73,7 +73,7 @@ const Home = () => (
         </div>
       </div>
     </div>
-    <div className="grow" />
+    <div className="grow min-h-7" />
   </main>
 );
 
