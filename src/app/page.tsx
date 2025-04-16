@@ -43,8 +43,9 @@ const Home = () => (
       <Image
         src={FACE_IMAGE_PATH}
         alt="Me!"
-        width={100}
-        height={100}
+        width={400}
+        height={400}
+        priority={true}
         className="object-cover size-64 rounded-3xl mx-auto my-7 md:mx-0 md:my-0"
       />
 
