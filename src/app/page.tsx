@@ -8,8 +8,8 @@ import {
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 import Typewriter from "@/components/typewriter";
+import faceImage from "@/images/face_compressed.jpg";
 
-const FACE_IMAGE_PATH = "/images/face.jpg";
 const CV_PATH = "/SoftEngCV.pdf";
 const ROLES = [
   "Software Engineer",
@@ -41,11 +41,10 @@ const Home = () => (
     <div className="grow min-h-20" />
     <div className="md:shrink md:flex md:mx-auto md:content-center md:gap-x-10 md:justify-center">
       <Image
-        src={FACE_IMAGE_PATH}
+        unoptimized
+        priority
+        src={faceImage}
         alt="Me!"
-        width={400}
-        height={400}
-        priority={true}
         className="object-cover size-64 rounded-3xl mx-auto my-7 md:mx-0 md:my-0"
       />
 

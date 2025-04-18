@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/navbar";
-
-const inter = Inter({ subsets: ["latin"] });
 
 const metadata: Metadata = {
   title: "Joel Clarke",
@@ -38,7 +35,7 @@ function RootLayout({
         />
         <link rel="manifest" href="/favicon/site.webmanifest" />
       </head>
-      <body className={`${inter.className} bg-primary`}>
+      <body className={"font-sans bg-primary"}>
         <NavBar />
         {children}
       </body>
