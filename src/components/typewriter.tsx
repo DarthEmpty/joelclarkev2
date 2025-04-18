@@ -12,11 +12,7 @@ function Typewriter(props: TypewriterProps) {
 
   return (
     <h1
-      className={
-        "font-mono w-0 whitespace-nowrap overflow-hidden animate-[typing_6s_linear_1s_infinite]" +
-        " " +
-        props.className
-      }
+      className={`font-mono w-0 whitespace-nowrap overflow-hidden animate-[typing_6s_linear_1s_infinite] ${props.className}`}
       onAnimationIteration={() => setIndex((index + 1) % props.texts.length)}
     >
       {props.texts[index]}
